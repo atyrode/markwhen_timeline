@@ -54,7 +54,7 @@ export const useMarkwhenStore = defineStore("markwhen", () => {
     () => `https://app.markwhen.com${pathOrHash.value}`
   );
   const timelineLink = computed(
-    () => `https://timeline.markwhen.com${pathOrHash.value}`
+    () => `http://localhost:5176${pathOrHash.value}`
   );
   const embedLink = computed(() => `<iframe src="${timelineLink.value}" />`);
 
