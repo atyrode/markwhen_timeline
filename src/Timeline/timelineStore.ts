@@ -92,6 +92,7 @@ export const useTimelineStore = defineStore("timeline", () => {
     () => markwhenState.value.transformed!
   );
   const darkMode = computed(() => !!markwhenStore.app?.isDark);
+  const timelineSettings = computed(() => !!markwhenStore.app?.timelineSettings);
 
   const pageRange = computed(
     () =>
@@ -419,6 +420,7 @@ export const useTimelineStore = defineStore("timeline", () => {
 
     // getters
     darkMode,
+    timelineSettings,
     pageTimeline,
     tags,
     pageTimelineMetadata,

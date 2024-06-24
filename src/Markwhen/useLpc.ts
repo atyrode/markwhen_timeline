@@ -11,6 +11,7 @@ import { useColors } from "./useColors";
 
 export interface AppState {
   isDark?: boolean;
+  timelineSettings?: boolean;
   hoveringPath?: EventPath;
   detailPath?: EventPath;
   path?: string;

@@ -75,6 +75,7 @@ export const useMarkwhenStore = defineStore("markwhen", () => {
             const mw = parse(text);
             app.value = {
               isDark: false,
+              timelineSettings: true,
               colorMap: useColors(mw.timelines[0]).value,
             };
             markwhen.value = {
@@ -92,6 +93,7 @@ export const useMarkwhenStore = defineStore("markwhen", () => {
       const mw = parse(decoded);
       app.value = {
         isDark: false,
+        timelineSettings: true,
         colorMap: useColors(mw.timelines[0]).value,
       };
       markwhen.value = {

@@ -313,7 +313,7 @@ const pointerdown = useDoubleTap(setViewportDateInterval);
       <now-line />
       <ReferenceDateVue v-if="false"></ReferenceDateVue>
       <Events />
-      <Settings></Settings>
+      <Settings v-if="timelineStore.timelineSettings"></Settings>
       <!-- <DebugView v-if="true" /> -->
       <div ref="svgHolder" style="width: 0; height: 0">
         <SvgView v-if="svgParams" v-bind="svgParams" ref="svgView"></SvgView>
